@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+var shrinkwrap = require('..');
+
+// parse argv
+
+program
+  .option('-S, --save', 'Save currently installed component versions to component-shrinkwrap.json')
+  .option('-I, --install', 'Install components specified in component-shrinkwrap.json')
+  .parse(process.argv);
+
+if (program.save) {
+	shrinkwrap.save();
+} else if (program.install) {
+	shrinkwrap.install();
+} else {
+	program.help();
+}

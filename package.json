@@ -1,0 +1,29 @@
+{
+  "name": "component-shrinkwrap",
+  "version": "0.0.1",
+  "description": "shrinkwrap for component build system",
+  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "component-shrinkwrap": "bin/component-shrinkwrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/code42day/component-shrinkwrap.git"
+  },
+  "keywords": [
+    "component",
+    "shrinkwrap"
+  ],
+  "dependencies": {
+    "commander": "~1.1.1"
+  },
+  "peerDependencies": {
+    "component": "*"
+  },
+  "devDependencies": {
+    "jshint": "~1.0.0"
+  }
+}
