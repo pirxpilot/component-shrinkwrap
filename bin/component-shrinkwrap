@@ -14,10 +14,12 @@ program
   .option('-I, --install', 'Install components specified in component-shrinkwrap.json')
   .parse(process.argv);
 
+var filename = 'component-shrinkwrap.json';
+
 if (program.save) {
-	shrinkwrap.save();
+	shrinkwrap.save(filename);
 } else if (program.install) {
-	shrinkwrap.install();
+	shrinkwrap.install(filename);
 } else {
 	program.help();
 }
