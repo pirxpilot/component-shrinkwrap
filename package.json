@@ -18,7 +18,8 @@
     "shrinkwrap"
   ],
   "dependencies": {
-    "commander": "~1.1.1"
+    "commander": "~1.1.1",
+    "component": "~0.13"
   },
   "peerDependencies": {
     "component": "*"
