@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/code42day/component-shrinkwrap.png)](https://gemnasium.com/code42day/component-shrinkwrap)
+[![NPM version](https://badge.fury.io/js/component-shrinkwrap.png)](http://badge.fury.io/js/component-shrinkwrap)
 # component-shrinkwrap
 
 
