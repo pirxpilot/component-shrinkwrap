@@ -1,9 +1,8 @@
 {
-  "undef": "true",
-  "unused": "true",
-  "laxbreak": "true",
-  "laxcomma": "true",
-  "es5": "true",
+  "undef": true,
+  "unused": true,
+  "laxbreak": true,
+  "laxcomma": true,
   "globals": {
     "console": false,
     "exports": false,

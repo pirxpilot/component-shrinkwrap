@@ -18,13 +18,13 @@
     "shrinkwrap"
   ],
   "dependencies": {
-    "commander": "~1.1.1",
-    "component": "~0.13"
+    "commander": "~1",
+    "component": "~0"
   },
   "peerDependencies": {
     "component": "*"
   },
   "devDependencies": {
-    "jshint": "~1.0.0"
+    "jshint": "~2"
   }
 }
