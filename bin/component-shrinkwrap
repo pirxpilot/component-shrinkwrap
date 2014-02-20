@@ -5,6 +5,7 @@
  */
 
 var program = require('commander');
+var fs = require('fs');
 var shrinkwrap = require('..');
 
 // parse argv
@@ -16,10 +17,10 @@ program
 
 var filename = 'component-shrinkwrap.json';
 
-if (program.save) {
-	shrinkwrap.save(filename);
-} else if (program.install) {
-	shrinkwrap.install(filename);
+if (program.save || (!program.install && fs.existsSync('components'))) {
+  shrinkwrap.save(filename);
+} else if (program.install || fs.existsSync(filename)) {
+  shrinkwrap.install(filename);
 } else {
-	program.help();
+  program.help();
 }
