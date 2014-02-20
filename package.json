@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "commander": "~1",
-    "component": "~0"
+    "component-installer": "~0"
   },
   "peerDependencies": {
     "component": "*"
