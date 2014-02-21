@@ -1,4 +1,10 @@
 
+0.2.0 / 2014-02-21
+==================
+
+ * Add default behavior when no options passed
+ * Use component-installer instead of component's private API
+
 0.1.0 / 2013-09-19 
 ==================
 
