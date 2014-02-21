@@ -5,7 +5,7 @@
 
 Shrinkwrap for component build system. Similar to [npm shrinkwrap][].
 Saves and recreates your `components` directory.
-
+Keeps list of components and their versions in `component-shrinkwrap.json`
 
 ## Install
 
@@ -22,6 +22,8 @@ To install components references in the shrinkwrap file
 
     component shrinkwrap --install
 
+When no options are passed, `component shrinkwrap` assumes `--save` if `components` directory
+exists, and `--install` if it doesn't.
 
 ## License
 
