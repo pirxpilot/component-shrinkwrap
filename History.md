@@ -1,4 +1,9 @@
 
+0.3.0 / 2014-02-21
+==================
+
+ * prevent packages from installing their dependencies
+
 0.2.0 / 2014-02-21
 ==================
 
