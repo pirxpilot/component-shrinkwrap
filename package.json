@@ -19,10 +19,8 @@
   ],
   "dependencies": {
     "commander": "~1",
+    "component-package": "~0",
     "component-installer": "~0"
-  },
-  "peerDependencies": {
-    "component": "*"
   },
   "devDependencies": {
     "jshint": "~2"
