@@ -19,8 +19,7 @@
   ],
   "dependencies": {
     "commander": "~1",
-    "component-package": "~0",
-    "component-installer": "~0"
+    "component-package": "~0"
   },
   "devDependencies": {
     "jshint": "~2"
