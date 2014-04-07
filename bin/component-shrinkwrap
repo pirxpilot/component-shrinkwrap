@@ -11,8 +11,9 @@ var shrinkwrap = require('..');
 // parse argv
 
 program
-  .option('-S, --save', 'Save currently installed component versions to component-shrinkwrap.json')
-  .option('-I, --install', 'Install components specified in component-shrinkwrap.json')
+  .option('-S, --save', 'save currently installed component versions to component-shrinkwrap.json')
+  .option('-I, --install', 'install components specified in component-shrinkwrap.json')
+  .option('-v, --verbose', 'output names of the installed files')
   .parse(process.argv);
 
 var filename = 'component-shrinkwrap.json';
@@ -20,7 +21,9 @@ var filename = 'component-shrinkwrap.json';
 if (program.save || (!program.install && fs.existsSync('components'))) {
   shrinkwrap.save(filename);
 } else if (program.install || fs.existsSync(filename)) {
-  shrinkwrap.install(filename);
+  shrinkwrap.install(filename, {
+    verbose: program.verbose
+  });
 } else {
   program.help();
 }
