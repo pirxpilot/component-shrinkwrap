@@ -1,4 +1,10 @@
 
+0.6.0 / 2014-04-26
+==================
+
+ * add --check option when saving the shrinkwrap file
+ * switch to shorter format for shrinkwrap file, old format is still supported: see `--long` option
+
 0.5.1 / 2014-04-26
 ==================
 
