@@ -18,7 +18,7 @@
     "shrinkwrap"
   ],
   "dependencies": {
-    "commander": "~1",
+    "commander": "~2",
     "component-package": "~0"
   },
   "devDependencies": {
