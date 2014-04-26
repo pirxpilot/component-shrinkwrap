@@ -18,6 +18,7 @@
     "shrinkwrap"
   ],
   "dependencies": {
+    "batch": "~0",
     "commander": "~2",
     "component-package": "~0"
   },
