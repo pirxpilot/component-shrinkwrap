@@ -15,13 +15,15 @@ program
   .option('-I, --install', 'install components specified in component-shrinkwrap.json')
   .option('-v, --verbose', 'output names of the installed files')
   .option('--long', 'write shrinkwrap file using older legacy format')
+  .option('-c, --check', 'verify that shrinkwrapped deps can be installed')
   .parse(process.argv);
 
 var filename = 'component-shrinkwrap.json';
 
 if (program.save || (!program.install && fs.existsSync('components'))) {
   shrinkwrap.save(filename, {
-  	long: program.long
+  	long: program.long,
+    check: program.check
   });
 } else if (program.install || fs.existsSync(filename)) {
   shrinkwrap.install(filename, {
