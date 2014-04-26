@@ -14,12 +14,15 @@ program
   .option('-S, --save', 'save currently installed component versions to component-shrinkwrap.json')
   .option('-I, --install', 'install components specified in component-shrinkwrap.json')
   .option('-v, --verbose', 'output names of the installed files')
+  .option('--long', 'write shrinkwrap file using older legacy format')
   .parse(process.argv);
 
 var filename = 'component-shrinkwrap.json';
 
 if (program.save || (!program.install && fs.existsSync('components'))) {
-  shrinkwrap.save(filename);
+  shrinkwrap.save(filename, {
+  	long: program.long
+  });
 } else if (program.install || fs.existsSync(filename)) {
   shrinkwrap.install(filename, {
     verbose: program.verbose
