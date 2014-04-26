@@ -1,4 +1,9 @@
 
+0.5.0 / 2014-04-25
+==================
+
+ * stop using component-install, use component-package directly
+
 0.4.0 / 2014-04-07
 ==================
 
