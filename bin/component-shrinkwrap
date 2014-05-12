@@ -16,11 +16,14 @@ program
   .option('-v, --verbose', 'output names of the installed files')
   .option('--long', 'write shrinkwrap file using older legacy format')
   .option('-c, --check', 'verify that shrinkwrapped deps can be installed')
+  .option('--registry [dir]', 'make a copy of the currently installed components in the registry compatible format')
   .parse(process.argv);
 
 var filename = 'component-shrinkwrap.json';
 
-if (program.save || (!program.install && fs.existsSync('components'))) {
+if (program.registry) {
+  shrinkwrap.registry(program.registry);
+} else if (program.save || (!program.install && fs.existsSync('components'))) {
   shrinkwrap.save(filename, {
   	long: program.long,
     check: program.check
