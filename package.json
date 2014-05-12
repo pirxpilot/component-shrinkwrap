@@ -1,6 +1,6 @@
 {
   "name": "component-shrinkwrap",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "shrinkwrap for component build system",
   "author": "Damian Krzeminski <pirxpilot@code42day.com>",
   "license": "MIT",
