@@ -16,17 +16,24 @@ program
   .option('-v, --verbose', 'output names of the installed files')
   .option('--long', 'write shrinkwrap file using older legacy format')
   .option('-c, --check', 'verify that shrinkwrapped deps can be installed')
+  .option('-r, --remotes <urls>', 'remotes to try installing from')
   .parse(process.argv);
 
 var filename = 'component-shrinkwrap.json';
 
+if (program.remotes) {
+  program.remotes = program.remotes.split(',');
+}
+
 if (program.save || (!program.install && fs.existsSync('components'))) {
   shrinkwrap.save(filename, {
   	long: program.long,
-    check: program.check
+    check: program.check,
+    remotes: program.remotes
   });
 } else if (program.install || fs.existsSync(filename)) {
   shrinkwrap.install(filename, {
+    remotes: program.remotes,
     verbose: program.verbose
   });
 } else {
