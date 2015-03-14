@@ -6,6 +6,8 @@ Shrinkwrap for component build system. Similar to [npm shrinkwrap][].
 Saves and recreates your `components` directory.
 Keeps list of components and their versions in `component-shrinkwrap.json`
 
+This version only supports component 0.x. Source code for component shrinkwrap compatible with component 1.x is located in [component-js/shrinkwrap](https://github.com/componentjs/shrinkwrap)
+
 ## Install
 
     npm install -g component component-shrinkwrap
