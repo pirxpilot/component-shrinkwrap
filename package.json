@@ -2,7 +2,7 @@
   "name": "component-shrinkwrap",
   "version": "0.7.0",
   "description": "shrinkwrap for component build system",
-  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
   "license": "MIT",
   "main": "index.js",
   "preferGlobal": true,
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/code42day/component-shrinkwrap.git"
+    "url": "git://github.com/pirxpilot/component-shrinkwrap.git"
   },
   "keywords": [
     "component",

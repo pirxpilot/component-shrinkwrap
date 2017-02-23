@@ -1,4 +1,4 @@
-[![Dependency Status](https://img.shields.io/gemnasium/code42day/component-shrinkwrap.svg)](https://gemnasium.com/code42day/component-shrinkwrap)
+[![Dependency Status](https://img.shields.io/gemnasium/pirxpilot/component-shrinkwrap.svg)](https://gemnasium.com/pirxpilot/component-shrinkwrap)
 [![NPM version](https://img.shields.io/npm/v/component-shrinkwrap.svg)](https://www.npmjs.org/package/component-shrinkwrap)
 # component-shrinkwrap
 
